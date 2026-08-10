@@ -7,6 +7,11 @@ jobs:
     steps:
       - name: checkout-code
         uses: actions/checkout@v5
+      - name: java install
+        uses: actions/setup-java@v5
+        with:
+          java-version: '21'
+          distributions: 'temurin'
       - name: build
         run: mvn clean install
       

@@ -12,6 +12,9 @@ jobs:
         with:
           java-version: 21
           distributions: temurin
+          java-package: jre
+          cache: maven
+          check-latest: false
       - name: build
         run: mvn clean install
       

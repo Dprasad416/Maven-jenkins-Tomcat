@@ -10,8 +10,8 @@ jobs:
       - name: java install
         uses: actions/setup-java@v5
         with:
-          java-version: '21'
-          distributions: 'temurin'
+          java-version: 21
+          distributions: temurin
       - name: build
         run: mvn clean install
       
